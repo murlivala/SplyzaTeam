@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Splyza</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="current_members">Current Members %d</string>
+    <string name="current_members_limit">Limit %d</string>
+    <string name="current_supporters">Current Supporters %d</string>
+    <string name="current_supporters_limit">Limit %d</string>
+    <string name="text_back_button">Back</string>
+    <string name="text_invite">Invite</string>
+    <string name="text_invite_members">Invite Members</string>
+    <string name="text_permission_level_coach">Coach</string>
+    <string name="text_permission_level_player_coach">Player Coach</string>
+    <string name="text_permission_level_player">Player</string>
+    <string name="text_permission_level_supporter">Supporter</string>
+    <string name="text_share_qr_code">Share QR Code</string>
+    <string name="text_my_qr_code">My QR Code</string>
+    <string name="text_copy_link">Copy Link</string>
+    <string name="text_invite_permissions">Invite Permissions</string>
+    <string name="text_permission_info">Invite URLs are valid for 7 days. Permissions can be changed from the member management view.</string>
+    <string name="text_about_permission">What are Permissions?</string>
+</resources>

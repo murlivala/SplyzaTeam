@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.MainFragment">
+
+    <include layout="@layout/spliza_title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/rlTeamInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusBar">
+
+        <TextView
+            android:id="@+id/tvMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvMembersLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/tvSupporters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvMembers"/>
+
+        <TextView
+            android:id="@+id/tvSupportersLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvMembersLimit"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="12sp"
+        android:text="@string/text_invite_permissions"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/rlTeamInfo"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <RelativeLayout
+        android:id="@+id/rlPermLevels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPermission"
+        android:background="@drawable/custom_border"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/tvCurrentPermLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="Coach"/>
+
+        <ImageView
+            android:id="@+id/imgPermLevel"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/expand_more_48px"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblUrls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_permission_info"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/rlPermLevels"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/lblPerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:text="@string/text_about_permission"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/lblUrls"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnShareQrCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_share_qr_code"
+        android:textAllCaps="false"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPerm"/>
+
+    <Button
+        android:id="@+id/btnCopyLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_copy_link"
+        android:textAllCaps="false"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShareQrCode"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
